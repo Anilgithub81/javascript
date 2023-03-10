@@ -1,0 +1,11 @@
+let a = 5;
+console.log(" a = " + a);
+let b = 8;
+console.log("b = " + b);
+let temp;
+temp = a;
+a = b;
+b = temp;
+console.log("After swap:-");
+console.log(" a = " + a);
+console.log("b = " + b);
