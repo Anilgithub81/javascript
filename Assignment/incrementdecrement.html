@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>document</title>
+  </head>
+  <body>
+    <p align="center">
+      <button onclick="Click(1)">Increment</button>
+      <span id="Clicks"> 0 </span>
+      <button onclick="Click(-1)">Decrement</button>
+    </p>
+    <p align="center">
+      <button onclick="Click(0)">Reset</button>
+    </p>
+    <script>
+      function Click(click) {
+        const Clicks = document.getElementById("Clicks");
+        const sumvalue = parseInt(Clicks.innerText) + click;
+        Clicks.innerText = sumvalue;
+        if (sumvalue < 0) {
+          Clicks.innerText = 0;
+        }
+        if (click == 0) {
+          Clicks.innerText = 0;
+        }
+      }
+    </script>
+  </body>
+</html>
